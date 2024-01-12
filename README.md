@@ -33,7 +33,7 @@ Additionally, there is a virtual I2C debugger for displaying the current communi
 
 The EEPROM modules serve as periodic backup storage for the current states of the system modules (e.g., is the gate opened/closed, is the light on/off). The clock module provides the current date/time and a stable ticking source for time syncing between the system modules.
 
-The temperature sensor here sends its readings to the Master MCU for processing. then the Master MCU sends the processed data to the Slave MCU to process the required fan speed to regulate the temperature.
+The temperature sensor here sends its readings to the Master MCU for processing; then, the Master MCU sends the processed data to the Slave MCU to determine the required fan speed for temperature regulation.
 
 Note: The clock module can be configured by the user input in the Master MCU to generate a square wave output based on the supplied frequency from the attached crystal.
 
