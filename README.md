@@ -13,7 +13,6 @@ with the added addition of an LCD unit to display the current date, time and tem
 
 ![Full Smart Home Network](https://github.com/amr-salah-abdullah/Smart-Home-System-interfacing/assets/156439432/19933318-9b5f-41d9-96f0-8260f4fab16f)
 
-
 ## I2C Bus Network
 
 The network can be mainly defined as a single-master-multi-slave communication network using the I2C bus feature of the used MCU
@@ -28,6 +27,10 @@ The network cosists of:
    * A TC74 temperature sensor
 and a vertual I2C debugger for displaying the current communication messages states
 
+![I2C Bus Network](https://github.com/amr-salah-abdullah/Smart-Home-System-interfacing/assets/156439432/44418b95-86db-4758-9a47-4d53231cf071)
 
-The EEPROM modules are used as a periodic backup storage for the current states of the  
-   
+
+The EEPROM modules are used as a periodic backup storage for the current states of operation of the system modules - is the gate opened/closed, is the light on/off, ...etc-  
+the clock module is used to define the current date/time and provide a stable ticking source that can be used for time syncing between the system modules.
+however, here is mainly used to record the current time variables and send them periodicly every one second to the master MCU.
+
