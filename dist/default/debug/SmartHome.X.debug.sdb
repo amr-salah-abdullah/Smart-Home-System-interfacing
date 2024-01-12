@@ -1,0 +1,1833 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F46K20 ]
+[d frameptr 4065 ]
+"67 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\mcc_generated_files/examples/i2c_master_example.c
+[e E358 . `uc
+I2C_NOERR 0
+I2C_BUSY 1
+I2C_FAIL 2
+]
+"68
+[e E363 . `uc
+I2C_STOP 1
+I2C_RESTART_READ 2
+I2C_RESTART_WRITE 3
+I2C_CONTINUE 4
+I2C_RESET_LINK 5
+]
+"146 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\mcc_generated_files/i2c_master.c
+[e E3134 . `uc
+I2C_IDLE 0
+I2C_SEND_ADR_READ 1
+I2C_SEND_ADR_WRITE 2
+I2C_TX 3
+I2C_RX 4
+I2C_RCEN 5
+I2C_TX_EMPTY 6
+I2C_SEND_RESTART_READ 7
+I2C_SEND_RESTART_WRITE 8
+I2C_SEND_RESTART 9
+I2C_SEND_STOP 10
+I2C_RX_ACK 11
+I2C_RX_NACK_STOP 12
+I2C_RX_NACK_RESTART 13
+I2C_RESET 14
+I2C_ADDRESS_NACK 15
+]
+"165
+[e E363 . `uc
+I2C_STOP 1
+I2C_RESTART_READ 2
+I2C_RESTART_WRITE 3
+I2C_CONTINUE 4
+I2C_RESET_LINK 5
+]
+[e E358 . `uc
+I2C_NOERR 0
+I2C_BUSY 1
+I2C_FAIL 2
+]
+"191
+[e E3152 . `uc
+I2C_DATA_COMPLETE 0
+I2C_WRITE_COLLISION 1
+I2C_ADDR_NACK 2
+I2C_DATA_NACK 3
+I2C_TIMEOUT 4
+I2C_NULL 5
+]
+"88 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\mcc_generated_files/adc.c
+[e E2740 . `uc
+LDR 0
+channel_FVR 15
+]
+"81 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\main.c
+[e E3189 . `uc
+LDR 0
+channel_FVR 15
+]
+"9 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\AECUL/ExtEEPROM/ExtEEPROM.c
+[v _EXTEEPROM_WriteByte EXTEEPROM_WriteByte `(v  1 e 1 0 ]
+"13
+[v _EXTEEPROM_ReadByte EXTEEPROM_ReadByte `(uc  1 e 1 0 ]
+"40 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\AECUL/LCD_LM016L/LCD.c
+[v _PINSTART PINSTART `(uc  1 e 1 0 ]
+"63
+[v _PINWRITE PINWRITE `(uc  1 e 1 0 ]
+"86
+[v _LCD4B_SET LCD4B_SET `(uc  1 e 1 0 ]
+"121
+[v _LCD4B_SENDCMD LCD4B_SENDCMD `(uc  1 e 1 0 ]
+"146
+[v _LCD4B_SENDCHAR LCD4B_SENDCHAR `(uc  1 e 1 0 ]
+"171
+[v _LCD4B_SENDCHARPOS LCD4B_SENDCHARPOS `(uc  1 e 1 0 ]
+"189
+[v _LCD4B_SENDSTR LCD4B_SENDSTR `(uc  1 e 1 0 ]
+"206
+[v _LCD4B_SENDSTRPOS LCD4B_SENDSTRPOS `(uc  1 e 1 0 ]
+"237
+[v _send4bit send4bit `(uc  1 s 1 send4bit ]
+"247
+[v _sendenable sendenable `(uc  1 s 1 sendenable ]
+"257
+[v _setcursor4bit setcursor4bit `(uc  1 s 1 setcursor4bit ]
+"14 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\AECUL/RealTimerClockDS1307/RealTimerCLock.h
+[s S48 . 7 `uc 1 second 1 0 `uc 1 minute 1 1 `uc 1 hour 1 2 `uc 1 day 1 3 `uc 1 month 1 4 `uc 1 year 1 5 `uc 1 init_read 1 6 :1:0 
+]
+"7 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\AECUL/RealTimerClockDS1307/RealTimerClock.c
+[v _GetDataAndTime GetDataAndTime `(S48  1 e 7 0 ]
+"18
+[v _DateArray DateArray `(*.30uc  1 e 2 0 ]
+"28
+[v _TimeArray TimeArray `(*.30uc  1 e 2 0 ]
+"38
+[v _EUSART_SendString EUSART_SendString `(v  1 e 1 0 ]
+"45
+[v _PrintDateUART PrintDateUART `(v  1 e 1 0 ]
+"50
+[v _PrintTimeUART PrintTimeUART `(v  1 e 1 0 ]
+"57
+[v _TimetoString TimetoString `(*.30uc  1 e 2 0 ]
+"72
+[v _DatetoString DatetoString `(*.30uc  1 e 2 0 ]
+"3 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\AECUL/TC74/TC74.c
+[v _ReadTemp ReadTemp `(uc  1 e 1 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"1 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\abs.c
+[v _abs abs `(i  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\almod.c
+[v ___almod __almod `(l  1 e 4 0 ]
+"1177 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+[v _vfpfcnvrt vfpfcnvrt `(v  1 s 1 vfpfcnvrt ]
+"1817
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+"3 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\memset.c
+[v _memset memset `(*.2v  1 e 2 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+"9 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\printf.c
+[v _printf printf `(i  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\putch.c
+[v _putch putch `(v  1 e 1 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"41 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"113
+[v _lightSwitch lightSwitch `(v  1 e 1 0 ]
+"140
+[v _manual_Override manual_Override `(v  1 e 1 0 ]
+"173
+[v _manual_homelight manual_homelight `(v  1 e 1 0 ]
+"187
+[v _manual_Doorlight manual_Doorlight `(v  1 e 1 0 ]
+"62 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\mcc_generated_files/adc.c
+[v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
+"115
+[v _ADC_GetConversion ADC_GetConversion `(us  1 e 2 0 ]
+"140
+[v _ADC_ISR ADC_ISR `(v  1 e 1 0 ]
+"151
+[v _ADC_SetInterruptHandler ADC_SetInterruptHandler `(v  1 e 1 0 ]
+"155
+[v _ADC_DefaultInterruptHandler ADC_DefaultInterruptHandler `(v  1 e 1 0 ]
+"66 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\mcc_generated_files/eusart.c
+[v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+"132
+[v _EUSART_Write EUSART_Write `(v  1 e 1 0 ]
+"144
+[v _EUSART_DefaultFramingErrorHandler EUSART_DefaultFramingErrorHandler `(v  1 e 1 0 ]
+"146
+[v _EUSART_DefaultOverrunErrorHandler EUSART_DefaultOverrunErrorHandler `(v  1 e 1 0 ]
+"154
+[v _EUSART_DefaultErrorHandler EUSART_DefaultErrorHandler `(v  1 e 1 0 ]
+"157
+[v _EUSART_SetFramingErrorHandler EUSART_SetFramingErrorHandler `(v  1 e 1 0 ]
+"161
+[v _EUSART_SetOverrunErrorHandler EUSART_SetOverrunErrorHandler `(v  1 e 1 0 ]
+"165
+[v _EUSART_SetErrorHandler EUSART_SetErrorHandler `(v  1 e 1 0 ]
+"63 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\mcc_generated_files/examples/i2c_master_example.c
+[v _I2C_Read1ByteRegister I2C_Read1ByteRegister `(uc  1 e 1 0 ]
+"91
+[v _I2C_Write1ByteRegister I2C_Write1ByteRegister `(v  1 e 1 0 ]
+"142
+[v _rd1RegCompleteHandler rd1RegCompleteHandler `(E363  1 s 1 rd1RegCompleteHandler ]
+"149
+[v _rd2RegCompleteHandler rd2RegCompleteHandler `(E363  1 s 1 rd2RegCompleteHandler ]
+"156
+[v _wr1RegCompleteHandler wr1RegCompleteHandler `(E363  1 s 1 wr1RegCompleteHandler ]
+"163
+[v _wr2RegCompleteHandler wr2RegCompleteHandler `(E363  1 s 1 wr2RegCompleteHandler ]
+"170
+[v _rdBlkRegCompleteHandler rdBlkRegCompleteHandler `(E363  1 s 1 rdBlkRegCompleteHandler ]
+"34 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\mcc_generated_files/ext_int.c
+[v _INT0_ISR INT0_ISR `(v  1 e 1 0 ]
+"43
+[v _INT0_CallBack INT0_CallBack `(v  1 e 1 0 ]
+"52
+[v _INT0_SetInterruptHandler INT0_SetInterruptHandler `(v  1 e 1 0 ]
+"56
+[v _INT0_DefaultInterruptHandler INT0_DefaultInterruptHandler `(v  1 e 1 0 ]
+"60
+[v _INT1_ISR INT1_ISR `(v  1 e 1 0 ]
+"69
+[v _INT1_CallBack INT1_CallBack `(v  1 e 1 0 ]
+"78
+[v _INT1_SetInterruptHandler INT1_SetInterruptHandler `(v  1 e 1 0 ]
+"82
+[v _INT1_DefaultInterruptHandler INT1_DefaultInterruptHandler `(v  1 e 1 0 ]
+"86
+[v _INT2_ISR INT2_ISR `(v  1 e 1 0 ]
+"95
+[v _INT2_CallBack INT2_CallBack `(v  1 e 1 0 ]
+"104
+[v _INT2_SetInterruptHandler INT2_SetInterruptHandler `(v  1 e 1 0 ]
+"108
+[v _INT2_DefaultInterruptHandler INT2_DefaultInterruptHandler `(v  1 e 1 0 ]
+"113
+[v _EXT_INT_Initialize EXT_INT_Initialize `(v  1 e 1 0 ]
+"167 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\mcc_generated_files/i2c_master.c
+[v _I2C_Initialize I2C_Initialize `(v  1 e 1 0 ]
+"176
+[v _I2C_Open I2C_Open `(E358  1 e 1 0 ]
+"211
+[v _I2C_Close I2C_Close `(E358  1 e 1 0 ]
+"226
+[v _I2C_MasterOperation I2C_MasterOperation `(E358  1 e 1 0 ]
+"247
+[v _I2C_MasterRead I2C_MasterRead `(E358  1 e 1 0 ]
+"252
+[v _I2C_MasterWrite I2C_MasterWrite `(E358  1 e 1 0 ]
+"264
+[v _I2C_SetBuffer I2C_SetBuffer `(v  1 e 1 0 ]
+[v i2_I2C_SetBuffer I2C_SetBuffer `(v  1 e 1 0 ]
+"274
+[v _I2C_SetDataCompleteCallback I2C_SetDataCompleteCallback `(v  1 e 1 0 ]
+[v i2_I2C_SetDataCompleteCallback I2C_SetDataCompleteCallback `(v  1 e 1 0 ]
+"284
+[v _I2C_SetAddressNackCallback I2C_SetAddressNackCallback `(v  1 e 1 0 ]
+"299
+[v _I2C_SetInterruptHandler I2C_SetInterruptHandler `(v  1 e 1 0 ]
+"304
+[v _I2C_SetCallback I2C_SetCallback `(v  1 s 1 I2C_SetCallback ]
+[v i2_I2C_SetCallback I2C_SetCallback `(v  1 s 1 i2_I2C_SetCallback ]
+"318
+[v _I2C_MasterIsr I2C_MasterIsr `(v  1 s 1 I2C_MasterIsr ]
+"323
+[v _I2C_MasterFsm I2C_MasterFsm `T(v  1 s 1 I2C_MasterFsm ]
+"335
+[v _I2C_DO_IDLE I2C_DO_IDLE `(E3134  1 s 1 I2C_DO_IDLE ]
+"342
+[v _I2C_DO_SEND_ADR_READ I2C_DO_SEND_ADR_READ `(E3134  1 s 1 I2C_DO_SEND_ADR_READ ]
+"349
+[v _I2C_DO_SEND_ADR_WRITE I2C_DO_SEND_ADR_WRITE `(E3134  1 s 1 I2C_DO_SEND_ADR_WRITE ]
+"356
+[v _I2C_DO_TX I2C_DO_TX `(E3134  1 s 1 I2C_DO_TX ]
+"380
+[v _I2C_DO_RX I2C_DO_RX `(E3134  1 s 1 I2C_DO_RX ]
+"404
+[v _I2C_DO_RCEN I2C_DO_RCEN `(E3134  1 s 1 I2C_DO_RCEN ]
+"411
+[v _I2C_DO_TX_EMPTY I2C_DO_TX_EMPTY `(E3134  1 s 1 I2C_DO_TX_EMPTY ]
+"451
+[v _I2C_DO_SEND_RESTART_READ I2C_DO_SEND_RESTART_READ `(E3134  1 s 1 I2C_DO_SEND_RESTART_READ ]
+"457
+[v _I2C_DO_SEND_RESTART_WRITE I2C_DO_SEND_RESTART_WRITE `(E3134  1 s 1 I2C_DO_SEND_RESTART_WRITE ]
+"464
+[v _I2C_DO_SEND_RESTART I2C_DO_SEND_RESTART `(E3134  1 s 1 I2C_DO_SEND_RESTART ]
+"470
+[v _I2C_DO_SEND_STOP I2C_DO_SEND_STOP `(E3134  1 s 1 I2C_DO_SEND_STOP ]
+"476
+[v _I2C_DO_RX_ACK I2C_DO_RX_ACK `(E3134  1 s 1 I2C_DO_RX_ACK ]
+"483
+[v _I2C_DO_RX_NACK_STOP I2C_DO_RX_NACK_STOP `(E3134  1 s 1 I2C_DO_RX_NACK_STOP ]
+"489
+[v _I2C_DO_RX_NACK_RESTART I2C_DO_RX_NACK_RESTART `(E3134  1 s 1 I2C_DO_RX_NACK_RESTART ]
+"495
+[v _I2C_DO_RESET I2C_DO_RESET `(E3134  1 s 1 I2C_DO_RESET ]
+"501
+[v _I2C_DO_ADDRESS_NACK I2C_DO_ADDRESS_NACK `(E3134  1 s 1 I2C_DO_ADDRESS_NACK ]
+"521
+[v _I2C_CallbackReturnStop I2C_CallbackReturnStop `(E363  1 e 1 0 ]
+"526
+[v _I2C_CallbackReturnReset I2C_CallbackReturnReset `(E363  1 e 1 0 ]
+"544
+[v _I2C_MasterOpen I2C_MasterOpen `T(a  1 s 1 I2C_MasterOpen ]
+"558
+[v _I2C_MasterClose I2C_MasterClose `T(v  1 s 1 I2C_MasterClose ]
+"564
+[v _I2C_MasterGetRxData I2C_MasterGetRxData `T(uc  1 s 1 I2C_MasterGetRxData ]
+"569
+[v _I2C_MasterSendTxData I2C_MasterSendTxData `T(v  1 s 1 I2C_MasterSendTxData ]
+"574
+[v _I2C_MasterEnableRestart I2C_MasterEnableRestart `T(v  1 s 1 I2C_MasterEnableRestart ]
+"579
+[v _I2C_MasterDisableRestart I2C_MasterDisableRestart `T(v  1 s 1 I2C_MasterDisableRestart ]
+"584
+[v _I2C_MasterStartRx I2C_MasterStartRx `T(v  1 s 1 I2C_MasterStartRx ]
+"589
+[v _I2C_MasterStart I2C_MasterStart `T(v  1 s 1 I2C_MasterStart ]
+"594
+[v _I2C_MasterStop I2C_MasterStop `T(v  1 s 1 I2C_MasterStop ]
+"599
+[v _I2C_MasterIsNack I2C_MasterIsNack `T(a  1 s 1 I2C_MasterIsNack ]
+"604
+[v _I2C_MasterSendAck I2C_MasterSendAck `T(v  1 s 1 I2C_MasterSendAck ]
+"610
+[v _I2C_MasterSendNack I2C_MasterSendNack `T(v  1 s 1 I2C_MasterSendNack ]
+"616
+[v _I2C_MasterClearBusCollision I2C_MasterClearBusCollision `T(v  1 s 1 I2C_MasterClearBusCollision ]
+"627
+[v _I2C_MasterEnableIrq I2C_MasterEnableIrq `T(v  1 s 1 I2C_MasterEnableIrq ]
+"637
+[v _I2C_MasterDisableIrq I2C_MasterDisableIrq `T(v  1 s 1 I2C_MasterDisableIrq ]
+"642
+[v _I2C_MasterClearIrq I2C_MasterClearIrq `T(v  1 s 1 I2C_MasterClearIrq ]
+[v i2_I2C_MasterClearIrq I2C_MasterClearIrq `T(v  1 s 1 i2_I2C_MasterClearIrq ]
+"647
+[v _I2C_MasterSetIrq I2C_MasterSetIrq `T(v  1 s 1 I2C_MasterSetIrq ]
+"52 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
+"79
+[v _INTERRUPT_InterruptManagerHigh INTERRUPT_InterruptManagerHigh `IIH(v  1 e 1 0 ]
+"108
+[v _INTERRUPT_InterruptManagerLow INTERRUPT_InterruptManagerLow `IIL(v  1 e 1 0 ]
+"50 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"70
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"59 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\mcc_generated_files/memory.c
+[v _FLASH_ReadByte FLASH_ReadByte `(uc  1 e 1 0 ]
+"94
+[v _FLASH_WriteBlock FLASH_WriteBlock `(c  1 e 1 0 ]
+"150
+[v _FLASH_EraseBlock FLASH_EraseBlock `(v  1 e 1 0 ]
+"55 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"213 C:\Users\DELL\MPLABXProjects\smarthome/SmartHome.X/mcc_generated_files/i2c_master.h
+[v _MSSP_InterruptHandler MSSP_InterruptHandler `*.37(v  1 e 2 0 ]
+"32 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\AECUL/LCD_LM016L/LCD.c
+[v _TRIS_Reg TRIS_Reg `[5]*.39VEuc  1 e 10 0 ]
+"33
+[v _LAT_Reg LAT_Reg `[5]*.39VEuc  1 e 10 0 ]
+[s S48 . 7 `uc 1 second 1 0 `uc 1 minute 1 1 `uc 1 hour 1 2 `uc 1 day 1 3 `uc 1 month 1 4 `uc 1 year 1 5 `uc 1 init_read 1 6 :1:0 
+]
+"2 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\AECUL/RealTimerClockDS1307/RealTimerClock.c
+[v _dt dt `S48  1 s 7 dt ]
+"3
+[v __Date _Date `[3]uc  1 e 3 0 ]
+"4
+[v __Time _Time `[3]uc  1 e 3 0 ]
+"5
+[v _timestr timestr `[10]uc  1 e 10 0 ]
+"6
+[v _datestr datestr `[10]uc  1 e 10 0 ]
+"345 C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f46k20.h
+[v _WPUB WPUB `VEuc  1 e 1 @3964 ]
+"446
+[v _ANSEL ANSEL `VEuc  1 e 1 @3966 ]
+"508
+[v _ANSELH ANSELH `VEuc  1 e 1 @3967 ]
+"552
+[v _PORTA PORTA `VEuc  1 e 1 @3968 ]
+"788
+[v _PORTB PORTB `VEuc  1 e 1 @3969 ]
+"996
+[v _PORTC PORTC `VEuc  1 e 1 @3970 ]
+"1184
+[v _PORTD PORTD `VEuc  1 e 1 @3971 ]
+"1326
+[v _PORTE PORTE `VEuc  1 e 1 @3972 ]
+"1532
+[v _LATA LATA `VEuc  1 e 1 @3977 ]
+[s S2247 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 LATA3 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+`uc 1 LATA6 1 0 :1:6 
+`uc 1 LATA7 1 0 :1:7 
+]
+"1559
+[s S2256 . 1 `uc 1 LA0 1 0 :1:0 
+`uc 1 LA1 1 0 :1:1 
+`uc 1 LA2 1 0 :1:2 
+`uc 1 LA3 1 0 :1:3 
+`uc 1 LA4 1 0 :1:4 
+`uc 1 LA5 1 0 :1:5 
+`uc 1 LA6 1 0 :1:6 
+`uc 1 LA7 1 0 :1:7 
+]
+[u S2265 . 1 `S2247 1 . 1 0 `S2256 1 . 1 0 ]
+[v _LATAbits LATAbits `VES2265  1 e 1 @3977 ]
+"1644
+[v _LATB LATB `VEuc  1 e 1 @3978 ]
+"1756
+[v _LATC LATC `VEuc  1 e 1 @3979 ]
+"1868
+[v _LATD LATD `VEuc  1 e 1 @3980 ]
+"1980
+[v _LATE LATE `VEuc  1 e 1 @3981 ]
+"2032
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+"2254
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"2476
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+"2698
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+"2920
+[v _TRISE TRISE `VEuc  1 e 1 @3990 ]
+"3072
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @3995 ]
+[s S1297 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 PSPIE 1 0 :1:7 
+]
+"3164
+[s S1306 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TX1IE 1 0 :1:4 
+`uc 1 RC1IE 1 0 :1:5 
+]
+[u S1310 . 1 `S1297 1 . 1 0 `S1306 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES1310  1 e 1 @3997 ]
+[s S642 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 PSPIF 1 0 :1:7 
+]
+"3241
+[s S651 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TX1IF 1 0 :1:4 
+`uc 1 RC1IF 1 0 :1:5 
+]
+[u S655 . 1 `S642 1 . 1 0 `S651 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES655  1 e 1 @3998 ]
+[s S1644 . 1 `uc 1 TMR1IP 1 0 :1:0 
+`uc 1 TMR2IP 1 0 :1:1 
+`uc 1 CCP1IP 1 0 :1:2 
+`uc 1 SSPIP 1 0 :1:3 
+`uc 1 TXIP 1 0 :1:4 
+`uc 1 RCIP 1 0 :1:5 
+`uc 1 ADIP 1 0 :1:6 
+`uc 1 PSPIP 1 0 :1:7 
+]
+"3318
+[s S1653 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TX1IP 1 0 :1:4 
+`uc 1 RC1IP 1 0 :1:5 
+]
+[u S1657 . 1 `S1644 1 . 1 0 `S1653 1 . 1 0 ]
+[v _IPR1bits IPR1bits `VES1657  1 e 1 @3999 ]
+[s S1782 . 1 `uc 1 CCP2IE 1 0 :1:0 
+`uc 1 TMR3IE 1 0 :1:1 
+`uc 1 HLVDIE 1 0 :1:2 
+`uc 1 BCLIE 1 0 :1:3 
+`uc 1 EEIE 1 0 :1:4 
+`uc 1 C2IE 1 0 :1:5 
+`uc 1 C1IE 1 0 :1:6 
+`uc 1 OSCFIE 1 0 :1:7 
+]
+"3398
+[s S1791 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 LVDIE 1 0 :1:2 
+]
+[s S1794 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 CMIE 1 0 :1:6 
+]
+[u S1797 . 1 `S1782 1 . 1 0 `S1791 1 . 1 0 `S1794 1 . 1 0 ]
+[v _PIE2bits PIE2bits `VES1797  1 e 1 @4000 ]
+[s S514 . 1 `uc 1 CCP2IF 1 0 :1:0 
+`uc 1 TMR3IF 1 0 :1:1 
+`uc 1 HLVDIF 1 0 :1:2 
+`uc 1 BCLIF 1 0 :1:3 
+`uc 1 EEIF 1 0 :1:4 
+`uc 1 C2IF 1 0 :1:5 
+`uc 1 C1IF 1 0 :1:6 
+`uc 1 OSCFIF 1 0 :1:7 
+]
+"3478
+[s S523 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 LVDIF 1 0 :1:2 
+]
+[s S526 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 CMIF 1 0 :1:6 
+]
+[u S529 . 1 `S514 1 . 1 0 `S523 1 . 1 0 `S526 1 . 1 0 ]
+[v _PIR2bits PIR2bits `VES529  1 e 1 @4001 ]
+[s S1674 . 1 `uc 1 CCP2IP 1 0 :1:0 
+`uc 1 TMR3IP 1 0 :1:1 
+`uc 1 HLVDIP 1 0 :1:2 
+`uc 1 BCLIP 1 0 :1:3 
+`uc 1 EEIP 1 0 :1:4 
+`uc 1 C2IP 1 0 :1:5 
+`uc 1 C1IP 1 0 :1:6 
+`uc 1 OSCFIP 1 0 :1:7 
+]
+"3558
+[s S1683 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 LVDIP 1 0 :1:2 
+]
+[s S1686 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 CMIP 1 0 :1:6 
+]
+[u S1689 . 1 `S1674 1 . 1 0 `S1683 1 . 1 0 `S1686 1 . 1 0 ]
+[v _IPR2bits IPR2bits `VES1689  1 e 1 @4002 ]
+[s S478 . 1 `uc 1 RD 1 0 :1:0 
+`uc 1 WR 1 0 :1:1 
+`uc 1 WREN 1 0 :1:2 
+`uc 1 WRERR 1 0 :1:3 
+`uc 1 FREE 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 CFGS 1 0 :1:6 
+`uc 1 EEPGD 1 0 :1:7 
+]
+"3634
+[s S487 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 EEFS 1 0 :1:6 
+]
+[u S490 . 1 `S478 1 . 1 0 `S487 1 . 1 0 ]
+[v _EECON1bits EECON1bits `VES490  1 e 1 @4006 ]
+"3679
+[v _EECON2 EECON2 `VEuc  1 e 1 @4007 ]
+"3686
+[v _EEDATA EEDATA `VEuc  1 e 1 @4008 ]
+"3693
+[v _EEADR EEADR `VEuc  1 e 1 @4009 ]
+"3755
+[v _EEADRH EEADRH `VEuc  1 e 1 @4010 ]
+"3781
+[v _RCSTA RCSTA `VEuc  1 e 1 @4011 ]
+[s S724 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"3822
+[s S733 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 ADEN 1 0 :1:3 
+]
+[s S736 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 SRENA 1 0 :1:5 
+]
+[s S739 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC8_9 1 0 :1:6 
+]
+[s S742 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC9 1 0 :1:6 
+]
+[s S745 . 1 `uc 1 RCD8 1 0 :1:0 
+]
+[u S747 . 1 `S724 1 . 1 0 `S733 1 . 1 0 `S736 1 . 1 0 `S739 1 . 1 0 `S742 1 . 1 0 `S745 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES747  1 e 1 @4011 ]
+"3991
+[v _TXSTA TXSTA `VEuc  1 e 1 @4012 ]
+[s S672 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"4030
+[s S681 . 1 `uc 1 TX9D1 1 0 :1:0 
+`uc 1 TRMT1 1 0 :1:1 
+`uc 1 BRGH1 1 0 :1:2 
+`uc 1 SENDB1 1 0 :1:3 
+`uc 1 SYNC1 1 0 :1:4 
+`uc 1 TXEN1 1 0 :1:5 
+`uc 1 TX91 1 0 :1:6 
+`uc 1 CSRC1 1 0 :1:7 
+]
+[s S690 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 TX8_9 1 0 :1:6 
+]
+[s S693 . 1 `uc 1 TXD8 1 0 :1:0 
+]
+[u S695 . 1 `S672 1 . 1 0 `S681 1 . 1 0 `S690 1 . 1 0 `S693 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES695  1 e 1 @4012 ]
+"4247
+[v _TXREG TXREG `VEuc  1 e 1 @4013 ]
+"4259
+[v _RCREG RCREG `VEuc  1 e 1 @4014 ]
+"4271
+[v _SPBRG SPBRG `VEuc  1 e 1 @4015 ]
+"4283
+[v _SPBRGH SPBRGH `VEuc  1 e 1 @4016 ]
+"4681
+[v _BAUDCON BAUDCON `VEuc  1 e 1 @4024 ]
+"5079
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @4032 ]
+"5150
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
+"5201
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @4034 ]
+[s S1930 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_NOT_DONE 1 0 :1:1 
+]
+"5245
+[s S1933 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :4:2 
+]
+[s S1937 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 DONE 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+]
+[s S1944 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_DONE 1 0 :1:1 
+]
+[s S1947 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 nDONE 1 0 :1:1 
+]
+[s S1950 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_DONE 1 0 :1:1 
+]
+[s S1953 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+]
+[s S1956 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GODONE 1 0 :1:1 
+]
+[u S1959 . 1 `S1930 1 . 1 0 `S1933 1 . 1 0 `S1937 1 . 1 0 `S1944 1 . 1 0 `S1947 1 . 1 0 `S1950 1 . 1 0 `S1953 1 . 1 0 `S1956 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES1959  1 e 1 @4034 ]
+"5327
+[v _ADRESL ADRESL `VEuc  1 e 1 @4035 ]
+"5334
+[v _ADRESH ADRESH `VEuc  1 e 1 @4036 ]
+"5341
+[v _SSPCON2 SSPCON2 `VEuc  1 e 1 @4037 ]
+[s S1121 . 1 `uc 1 SEN 1 0 :1:0 
+`uc 1 RSEN 1 0 :1:1 
+`uc 1 PEN 1 0 :1:2 
+`uc 1 RCEN 1 0 :1:3 
+`uc 1 ACKEN 1 0 :1:4 
+`uc 1 ACKDT 1 0 :1:5 
+`uc 1 ACKSTAT 1 0 :1:6 
+`uc 1 GCEN 1 0 :1:7 
+]
+"5358
+[u S1130 . 1 `S1121 1 . 1 0 ]
+[v _SSPCON2bits SSPCON2bits `VES1130  1 e 1 @4037 ]
+"5403
+[v _SSPCON1 SSPCON1 `VEuc  1 e 1 @4038 ]
+[s S953 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+"5423
+[s S959 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+[u S964 . 1 `S953 1 . 1 0 `S959 1 . 1 0 ]
+[v _SSPCON1bits SSPCON1bits `VES964  1 e 1 @4038 ]
+"5473
+[v _SSPSTAT SSPSTAT `VEuc  1 e 1 @4039 ]
+[s S1162 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_NOT_W 1 0 :1:2 
+]
+"5553
+[s S1165 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 D_NOT_A 1 0 :1:5 
+]
+[s S1168 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+[s S1177 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D 1 0 :1:5 
+]
+[s S1182 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 A 1 0 :1:5 
+]
+[s S1187 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+[s S1192 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+[s S1197 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_WRITE 1 0 :1:2 
+]
+[s S1200 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_ADDRESS 1 0 :1:5 
+]
+[s S1203 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+[s S1208 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 START 1 0 :1:3 
+`uc 1 STOP 1 0 :1:4 
+]
+[s S1212 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 RW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 DA 1 0 :1:5 
+]
+[s S1217 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 NOT_A 1 0 :1:5 
+]
+[u S1222 . 1 `S1162 1 . 1 0 `S1165 1 . 1 0 `S1168 1 . 1 0 `S1177 1 . 1 0 `S1182 1 . 1 0 `S1187 1 . 1 0 `S1192 1 . 1 0 `S1197 1 . 1 0 `S1200 1 . 1 0 `S1203 1 . 1 0 `S1208 1 . 1 0 `S1212 1 . 1 0 `S1217 1 . 1 0 ]
+[v _SSPSTATbits SSPSTATbits `VES1222  1 e 1 @4039 ]
+"5698
+[v _SSPADD SSPADD `VEuc  1 e 1 @4040 ]
+"5705
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @4041 ]
+[s S1537 . 1 `uc 1 NOT_BOR 1 0 :1:0 
+]
+"6067
+[s S1539 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_POR 1 0 :1:1 
+]
+[s S1542 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_PD 1 0 :1:2 
+]
+[s S1545 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 NOT_TO 1 0 :1:3 
+]
+[s S1548 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 NOT_RI 1 0 :1:4 
+]
+[s S1551 . 1 `uc 1 nBOR 1 0 :1:0 
+`uc 1 nPOR 1 0 :1:1 
+`uc 1 nPD 1 0 :1:2 
+`uc 1 nTO 1 0 :1:3 
+`uc 1 nRI 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 SBOREN 1 0 :1:6 
+`uc 1 IPEN 1 0 :1:7 
+]
+[s S1560 . 1 `uc 1 BOR 1 0 :1:0 
+`uc 1 POR 1 0 :1:1 
+`uc 1 PD 1 0 :1:2 
+`uc 1 TO 1 0 :1:3 
+`uc 1 RI 1 0 :1:4 
+]
+[u S1566 . 1 `S1537 1 . 1 0 `S1539 1 . 1 0 `S1542 1 . 1 0 `S1545 1 . 1 0 `S1548 1 . 1 0 `S1551 1 . 1 0 `S1560 1 . 1 0 ]
+[v _RCONbits RCONbits `VES1566  1 e 1 @4048 ]
+"6455
+[v _OSCCON OSCCON `VEuc  1 e 1 @4051 ]
+[s S1604 . 1 `uc 1 INT1IF 1 0 :1:0 
+`uc 1 INT2IF 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 INT1IE 1 0 :1:3 
+`uc 1 INT2IE 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 INT1IP 1 0 :1:6 
+`uc 1 INT2IP 1 0 :1:7 
+]
+"6908
+[s S1613 . 1 `uc 1 INT1F 1 0 :1:0 
+`uc 1 INT2F 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 INT1E 1 0 :1:3 
+`uc 1 INT2E 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 INT1P 1 0 :1:6 
+`uc 1 INT2P 1 0 :1:7 
+]
+[u S1622 . 1 `S1604 1 . 1 0 `S1613 1 . 1 0 ]
+[v _INTCON3bits INTCON3bits `VES1622  1 e 1 @4080 ]
+[s S356 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 NOT_RBPU 1 0 :1:7 
+]
+"6998
+[s S359 . 1 `uc 1 RBIP 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 TMR0IP 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INTEDG2 1 0 :1:4 
+`uc 1 INTEDG1 1 0 :1:5 
+`uc 1 INTEDG0 1 0 :1:6 
+`uc 1 nRBPU 1 0 :1:7 
+]
+[s S368 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 RBPU 1 0 :1:7 
+]
+[u S371 . 1 `S356 1 . 1 0 `S359 1 . 1 0 `S368 1 . 1 0 ]
+[v _INTCON2bits INTCON2bits `VES371  1 e 1 @4081 ]
+[s S278 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"7075
+[s S287 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S296 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S300 . 1 `S278 1 . 1 0 `S287 1 . 1 0 `S296 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES300  1 e 1 @4082 ]
+"7181
+[v _TABLAT TABLAT `VEuc  1 e 1 @4085 ]
+"7197
+[v _TBLPTRL TBLPTRL `VEuc  1 e 1 @4086 ]
+"7204
+[v _TBLPTRH TBLPTRH `VEuc  1 e 1 @4087 ]
+"7211
+[v _TBLPTRU TBLPTRU `VEuc  1 e 1 @4088 ]
+"153 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+[v _prec prec `i  1 s 2 prec ]
+[v _width width `i  1 s 2 width ]
+"154
+[v _flags flags `uc  1 s 1 flags ]
+"185
+[v _dbuf dbuf `[32]uc  1 s 32 dbuf ]
+[s S48 . 7 `uc 1 second 1 0 `uc 1 minute 1 1 `uc 1 hour 1 2 `uc 1 day 1 3 `uc 1 month 1 4 `uc 1 year 1 5 `uc 1 init_read 1 6 :1:0 
+]
+"19 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\main.c
+[v _timer timer `S48  1 e 7 0 ]
+"20
+[v _TCA7temp TCA7temp `uc  1 e 1 0 ]
+"21
+[v _EEPROMreading EEPROMreading `uc  1 e 1 0 ]
+"22
+[v _lightread lightread `us  1 e 2 0 ]
+"23
+[v _homelightauto homelightauto `uc  1 e 1 0 ]
+"24
+[v _doorlightauto doorlightauto `uc  1 e 1 0 ]
+"26
+[v _LCDtemp LCDtemp `[4]uc  1 e 4 0 ]
+[s S2169 . 12 `uc 1 REpin 1 0 `uc 1 REport 1 1 `uc 1 ENpin 1 2 `uc 1 ENport 1 3 `[4]uc 1 datapins 4 4 `[4]uc 1 dataport 4 8 ]
+"28
+[v _lcd lcd `S2169  1 e 12 0 ]
+"60 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\mcc_generated_files/adc.c
+[v _ADC_InterruptHandler ADC_InterruptHandler `*.37(v  1 e 2 0 ]
+[s S596 . 1 `uc 1 perr 1 0 :1:0 
+`uc 1 ferr 1 0 :1:1 
+`uc 1 oerr 1 0 :1:2 
+`uc 1 reserved 1 0 :5:3 
+]
+"52 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\mcc_generated_files/eusart.c
+[u S601 . 1 `S596 1 . 1 0 `uc 1 status 1 0 ]
+[v _eusartRxLastError eusartRxLastError `VES601  1 e 1 0 ]
+"58
+[v _EUSART_FramingErrorHandler EUSART_FramingErrorHandler `*.37(v  1 e 2 0 ]
+"59
+[v _EUSART_OverrunErrorHandler EUSART_OverrunErrorHandler `*.37(v  1 e 2 0 ]
+"60
+[v _EUSART_ErrorHandler EUSART_ErrorHandler `*.37(v  1 e 2 0 ]
+"30 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\mcc_generated_files/ext_int.c
+[v _INT0_InterruptHandler INT0_InterruptHandler `*.37(v  1 e 2 0 ]
+"31
+[v _INT1_InterruptHandler INT1_InterruptHandler `*.37(v  1 e 2 0 ]
+"32
+[v _INT2_InterruptHandler INT2_InterruptHandler `*.37(v  1 e 2 0 ]
+"146 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\mcc_generated_files/i2c_master.c
+[v _i2c_fsmStateTable i2c_fsmStateTable `C[16]*.37(E3134  1 e 32 0 ]
+[s S927 . 36 `[6]*.37(E363 1 callbackTable 12 0 `[6]*.39v 1 callbackPayload 12 12 `us 1 time_out 2 24 `us 1 time_out_value 2 26 `uc 1 address 1 28 `*.39uc 1 data_ptr 2 29 `ui 1 data_length 2 31 `E3134 1 state 1 33 `E358 1 error 1 34 `uc 1 addressNackCheck 1 35 :1:0 
+`uc 1 busy 1 35 :1:1 
+`uc 1 inUse 1 35 :1:2 
+`uc 1 bufferFree 1 35 :1:3 
+]
+"165
+[v _I2C_Status I2C_Status `S927  1 e 36 0 ]
+"41 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"103
+} 0
+"9 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+[u S3050 . 3 `*.2uc 1 buffer 3 0 `*.2Cuc 1 source 3 0 ]
+"13
+[s S3053 _IO_FILE 12 `S3050 1 . 3 0 `i 1 count 2 3 `[3]uc 1 ungetbuf 3 5 `i 1 ungetcnt 2 8 `i 1 limit 2 10 ]
+[v sprintf@f f `S3053  1 a 12 8 ]
+"12
+[v sprintf@ap ap `[1]*.39v  1 a 2 6 ]
+"9
+[v sprintf@s s `*.30uc  1 p 1 0 ]
+[v sprintf@fmt fmt `*.31Cuc  1 p 1 1 ]
+"23
+} 0
+"50 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"68
+} 0
+"55 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"94
+} 0
+"70 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"76
+} 0
+"52 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
+{
+"77
+} 0
+"167 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\mcc_generated_files/i2c_master.c
+[v _I2C_Initialize I2C_Initialize `(v  1 e 1 0 ]
+{
+"174
+} 0
+"113 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\mcc_generated_files/ext_int.c
+[v _EXT_INT_Initialize EXT_INT_Initialize `(v  1 e 1 0 ]
+{
+"142
+} 0
+"104
+[v _INT2_SetInterruptHandler INT2_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v INT2_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
+"106
+} 0
+"78
+[v _INT1_SetInterruptHandler INT1_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v INT1_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
+"80
+} 0
+"52
+[v _INT0_SetInterruptHandler INT0_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v INT0_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
+"54
+} 0
+"66 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\mcc_generated_files/eusart.c
+[v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+{
+"92
+} 0
+"161
+[v _EUSART_SetOverrunErrorHandler EUSART_SetOverrunErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetOverrunErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"163
+} 0
+"157
+[v _EUSART_SetFramingErrorHandler EUSART_SetFramingErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetFramingErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"159
+} 0
+"165
+[v _EUSART_SetErrorHandler EUSART_SetErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"167
+} 0
+"62 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\mcc_generated_files/adc.c
+[v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
+{
+"86
+} 0
+"151
+[v _ADC_SetInterruptHandler ADC_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v ADC_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
+"153
+} 0
+"3 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\AECUL/TC74/TC74.c
+[v _ReadTemp ReadTemp `(uc  1 e 1 0 ]
+{
+[v ReadTemp@addr addr `uc  1 a 1 wreg ]
+"4
+[v ReadTemp@temp temp `uc  1 a 1 13 ]
+"3
+[v ReadTemp@addr addr `uc  1 a 1 wreg ]
+[v ReadTemp@addr addr `uc  1 a 1 12 ]
+"7
+} 0
+"50 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\AECUL/RealTimerClockDS1307/RealTimerClock.c
+[v _PrintTimeUART PrintTimeUART `(v  1 e 1 0 ]
+{
+"51
+[v PrintTimeUART@str str `*.30uc  1 a 1 21 ]
+"55
+} 0
+"57
+[v _TimetoString TimetoString `(*.30uc  1 e 2 0 ]
+{
+"71
+} 0
+"28
+[v _TimeArray TimeArray `(*.30uc  1 e 2 0 ]
+{
+"37
+} 0
+"45
+[v _PrintDateUART PrintDateUART `(v  1 e 1 0 ]
+{
+"46
+[v PrintDateUART@str str `*.30uc  1 a 1 21 ]
+"49
+} 0
+"38
+[v _EUSART_SendString EUSART_SendString `(v  1 e 1 0 ]
+{
+"39
+[v EUSART_SendString@len len `us  1 a 2 6 ]
+"38
+[v EUSART_SendString@str str `*.34uc  1 p 2 4 ]
+"43
+} 0
+"132 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\mcc_generated_files/eusart.c
+[v _EUSART_Write EUSART_Write `(v  1 e 1 0 ]
+{
+[v EUSART_Write@txData txData `uc  1 a 1 wreg ]
+[v EUSART_Write@txData txData `uc  1 a 1 wreg ]
+[v EUSART_Write@txData txData `uc  1 a 1 0 ]
+"139
+} 0
+"72 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\AECUL/RealTimerClockDS1307/RealTimerClock.c
+[v _DatetoString DatetoString `(*.30uc  1 e 2 0 ]
+{
+"86
+} 0
+"18
+[v _DateArray DateArray `(*.30uc  1 e 2 0 ]
+{
+"26
+} 0
+"14 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\AECUL/RealTimerClockDS1307/RealTimerCLock.h
+[s S48 . 7 `uc 1 second 1 0 `uc 1 minute 1 1 `uc 1 hour 1 2 `uc 1 day 1 3 `uc 1 month 1 4 `uc 1 year 1 5 `uc 1 init_read 1 6 :1:0 
+]
+"7 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\AECUL/RealTimerClockDS1307/RealTimerClock.c
+[v _GetDataAndTime GetDataAndTime `(S48  1 e 7 0 ]
+{
+"17
+} 0
+"86 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\AECUL/LCD_LM016L/LCD.c
+[v _LCD4B_SET LCD4B_SET `(uc  1 e 1 0 ]
+{
+[s S2362 . 1 `uc 1 port 1 0 :3:0 
+`uc 1 pin 1 0 :3:3 
+`uc 1 direction 1 0 :1:6 
+`uc 1 logic 1 0 :1:7 
+]
+"99
+[v LCD4B_SET@pinptr_2471 pinptr `S2362  1 a 1 29 ]
+"98
+[v LCD4B_SET@i i `i  1 a 2 27 ]
+[s S2362 . 1 `uc 1 port 1 0 :3:0 
+`uc 1 pin 1 0 :3:3 
+`uc 1 direction 1 0 :1:6 
+`uc 1 logic 1 0 :1:7 
+]
+"92
+[v LCD4B_SET@pinptr pinptr `S2362  1 a 1 30 ]
+[s S2169 . 12 `uc 1 REpin 1 0 `uc 1 REport 1 1 `uc 1 ENpin 1 2 `uc 1 ENport 1 3 `[4]uc 1 datapins 4 4 `[4]uc 1 dataport 4 8 ]
+"86
+[v LCD4B_SET@lcd lcd `*.30CS2169  1 p 1 24 ]
+"91
+[v LCD4B_SET@F3672 F3672 `S2362  1 s 1 F3672 ]
+"98
+[v LCD4B_SET@F3675 F3675 `S2362  1 s 1 F3675 ]
+"119
+} 0
+"40
+[v _PINSTART PINSTART `(uc  1 e 1 0 ]
+{
+"41
+[v PINSTART@ret ret `uc  1 a 1 17 ]
+[s S2362 . 1 `uc 1 port 1 0 :3:0 
+`uc 1 pin 1 0 :3:3 
+`uc 1 direction 1 0 :1:6 
+`uc 1 logic 1 0 :1:7 
+]
+"40
+[v PINSTART@pinconfig pinconfig `*.39CS2362  1 p 2 10 ]
+"61
+} 0
+"206
+[v _LCD4B_SENDSTRPOS LCD4B_SENDSTRPOS `(uc  1 e 1 0 ]
+{
+[s S2169 . 12 `uc 1 REpin 1 0 `uc 1 REport 1 1 `uc 1 ENpin 1 2 `uc 1 ENport 1 3 `[4]uc 1 datapins 4 4 `[4]uc 1 dataport 4 8 ]
+[v LCD4B_SENDSTRPOS@lcd lcd `*.30CS2169  1 p 1 30 ]
+[v LCD4B_SENDSTRPOS@str str `*.31uc  1 p 1 31 ]
+[v LCD4B_SENDSTRPOS@row row `uc  1 p 1 32 ]
+[v LCD4B_SENDSTRPOS@column column `uc  1 p 1 33 ]
+"218
+} 0
+"257
+[v _setcursor4bit setcursor4bit `(uc  1 s 1 setcursor4bit ]
+{
+"258
+[v setcursor4bit@ret ret `uc  1 a 1 29 ]
+[s S2169 . 12 `uc 1 REpin 1 0 `uc 1 REport 1 1 `uc 1 ENpin 1 2 `uc 1 ENport 1 3 `[4]uc 1 datapins 4 4 `[4]uc 1 dataport 4 8 ]
+"257
+[v setcursor4bit@lcd lcd `*.30CS2169  1 p 1 24 ]
+[v setcursor4bit@row row `uc  1 p 1 25 ]
+[v setcursor4bit@col col `uc  1 p 1 26 ]
+"268
+} 0
+"121
+[v _LCD4B_SENDCMD LCD4B_SENDCMD `(uc  1 e 1 0 ]
+{
+"136
+[v LCD4B_SENDCMD@i_2497 i `i  1 a 2 21 ]
+"130
+[v LCD4B_SENDCMD@i i `i  1 a 2 19 ]
+[s S2362 . 1 `uc 1 port 1 0 :3:0 
+`uc 1 pin 1 0 :3:3 
+`uc 1 direction 1 0 :1:6 
+`uc 1 logic 1 0 :1:7 
+]
+"127
+[v LCD4B_SENDCMD@pinptr pinptr `S2362  1 a 1 23 ]
+"122
+[v LCD4B_SENDCMD@ret ret `uc  1 a 1 18 ]
+[s S2169 . 12 `uc 1 REpin 1 0 `uc 1 REport 1 1 `uc 1 ENpin 1 2 `uc 1 ENport 1 3 `[4]uc 1 datapins 4 4 `[4]uc 1 dataport 4 8 ]
+"121
+[v LCD4B_SENDCMD@lcd lcd `*.30CS2169  1 p 1 14 ]
+[v LCD4B_SENDCMD@cmd cmd `uc  1 p 1 15 ]
+"126
+[v LCD4B_SENDCMD@F3681 F3681 `S2362  1 s 1 F3681 ]
+"144
+} 0
+"189
+[v _LCD4B_SENDSTR LCD4B_SENDSTR `(uc  1 e 1 0 ]
+{
+"192
+[v LCD4B_SENDSTR@length length `uc  1 a 1 27 ]
+"191
+[v LCD4B_SENDSTR@str_old str_old `*.30uc  1 a 1 26 ]
+[s S2169 . 12 `uc 1 REpin 1 0 `uc 1 REport 1 1 `uc 1 ENpin 1 2 `uc 1 ENport 1 3 `[4]uc 1 datapins 4 4 `[4]uc 1 dataport 4 8 ]
+"189
+[v LCD4B_SENDSTR@lcd lcd `*.30CS2169  1 p 1 24 ]
+[v LCD4B_SENDSTR@str str `*.30uc  1 p 1 25 ]
+"204
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+{
+"7
+[v strlen@a a `*.34Cuc  1 a 2 2 ]
+"5
+[v strlen@s s `*.34Cuc  1 p 2 0 ]
+"12
+} 0
+"146 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\AECUL/LCD_LM016L/LCD.c
+[v _LCD4B_SENDCHAR LCD4B_SENDCHAR `(uc  1 e 1 0 ]
+{
+"161
+[v LCD4B_SENDCHAR@i_2519 i `i  1 a 2 21 ]
+"155
+[v LCD4B_SENDCHAR@i i `i  1 a 2 19 ]
+[s S2362 . 1 `uc 1 port 1 0 :3:0 
+`uc 1 pin 1 0 :3:3 
+`uc 1 direction 1 0 :1:6 
+`uc 1 logic 1 0 :1:7 
+]
+"152
+[v LCD4B_SENDCHAR@pinptr pinptr `S2362  1 a 1 23 ]
+"147
+[v LCD4B_SENDCHAR@ret ret `uc  1 a 1 18 ]
+[s S2169 . 12 `uc 1 REpin 1 0 `uc 1 REport 1 1 `uc 1 ENpin 1 2 `uc 1 ENport 1 3 `[4]uc 1 datapins 4 4 `[4]uc 1 dataport 4 8 ]
+"146
+[v LCD4B_SENDCHAR@lcd lcd `*.30CS2169  1 p 1 14 ]
+[v LCD4B_SENDCHAR@data data `uc  1 p 1 15 ]
+"151
+[v LCD4B_SENDCHAR@F3689 F3689 `S2362  1 s 1 F3689 ]
+"169
+} 0
+"247
+[v _sendenable sendenable `(uc  1 s 1 sendenable ]
+{
+[s S2362 . 1 `uc 1 port 1 0 :3:0 
+`uc 1 pin 1 0 :3:3 
+`uc 1 direction 1 0 :1:6 
+`uc 1 logic 1 0 :1:7 
+]
+"249
+[v sendenable@pinEN pinEN `S2362  1 a 1 13 ]
+"248
+[v sendenable@ret ret `uc  1 a 1 12 ]
+[s S2169 . 12 `uc 1 REpin 1 0 `uc 1 REport 1 1 `uc 1 ENpin 1 2 `uc 1 ENport 1 3 `[4]uc 1 datapins 4 4 `[4]uc 1 dataport 4 8 ]
+"247
+[v sendenable@lcd lcd `*.30CS2169  1 p 1 10 ]
+"248
+[v sendenable@F3731 F3731 `S2362  1 s 1 F3731 ]
+"255
+} 0
+"63
+[v _PINWRITE PINWRITE `(uc  1 e 1 0 ]
+{
+"64
+[v PINWRITE@ret ret `uc  1 a 1 37 ]
+[s S2362 . 1 `uc 1 port 1 0 :3:0 
+`uc 1 pin 1 0 :3:3 
+`uc 1 direction 1 0 :1:6 
+`uc 1 logic 1 0 :1:7 
+]
+"63
+[v PINWRITE@pinconfig pinconfig `*.39CS2362  1 p 2 2 ]
+[v PINWRITE@log log `uc  1 p 1 4 ]
+"83
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\printf.c
+[v _printf printf `(i  1 e 2 0 ]
+{
+"8
+[v printf@ap ap `[1]*.39v  1 a 2 0 ]
+"5
+[v printf@fmt fmt `*.31Cuc  1 p 1 36 ]
+"13
+} 0
+"1817 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+{
+"1820
+[v vfprintf@cfmt cfmt `*.31uc  1 a 1 35 ]
+[s S3085 _IO_FILE 0 ]
+"1817
+[v vfprintf@fp fp `*.39S3085  1 p 2 30 ]
+[v vfprintf@fmt fmt `*.31Cuc  1 p 1 32 ]
+[v vfprintf@ap ap `*.39*.39v  1 p 2 33 ]
+"1840
+} 0
+"1177
+[v _vfpfcnvrt vfpfcnvrt `(v  1 s 1 vfpfcnvrt ]
+{
+[u S3098 . 4 `l 1 sint 4 0 `ul 1 uint 4 0 `d 1 f 4 0 ]
+"1188
+[v vfpfcnvrt@convarg convarg `S3098  1 a 4 25 ]
+"1179
+[v vfpfcnvrt@c c `uc  1 a 1 29 ]
+[v vfpfcnvrt@cp cp `*.31uc  1 a 1 24 ]
+"1180
+[v vfpfcnvrt@done done `a  1 a 1 23 ]
+[s S3085 _IO_FILE 0 ]
+"1177
+[v vfpfcnvrt@fp fp `*.39S3085  1 p 2 14 ]
+[v vfpfcnvrt@fmt fmt `*.30*.31uc  1 p 1 16 ]
+[v vfpfcnvrt@ap ap `*.39*.39v  1 p 2 17 ]
+"1814
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+{
+[v fputc@c c `i  1 p 2 0 ]
+[u S3050 . 3 `*.2uc 1 buffer 3 0 `*.2Cuc 1 source 3 0 ]
+[s S3053 _IO_FILE 12 `S3050 1 . 3 0 `i 1 count 2 3 `[3]uc 1 ungetbuf 3 5 `i 1 ungetcnt 2 8 `i 1 limit 2 10 ]
+[v fputc@fp fp `*.39S3053  1 p 2 2 ]
+"24
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\putch.c
+[v _putch putch `(v  1 e 1 0 ]
+{
+"9
+} 0
+"1 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\abs.c
+[v _abs abs `(i  1 e 2 0 ]
+{
+[v abs@a a `i  1 p 2 10 ]
+"4
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+{
+"10
+[v ___llmod@counter counter `uc  1 a 1 8 ]
+"7
+[v ___llmod@dividend dividend `ul  1 p 4 0 ]
+[v ___llmod@divisor divisor `ul  1 p 4 4 ]
+"25
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+{
+"10
+[v ___lldiv@quotient quotient `ul  1 a 4 9 ]
+"11
+[v ___lldiv@counter counter `uc  1 a 1 8 ]
+"7
+[v ___lldiv@dividend dividend `ul  1 p 4 0 ]
+[v ___lldiv@divisor divisor `ul  1 p 4 4 ]
+"30
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\almod.c
+[v ___almod __almod `(l  1 e 4 0 ]
+{
+"10
+[v ___almod@sign sign `uc  1 a 1 9 ]
+[v ___almod@counter counter `uc  1 a 1 8 ]
+"7
+[v ___almod@dividend dividend `l  1 p 4 0 ]
+[v ___almod@divisor divisor `l  1 p 4 4 ]
+"34
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+{
+"10
+[v ___aldiv@quotient quotient `l  1 a 4 10 ]
+"11
+[v ___aldiv@sign sign `uc  1 a 1 9 ]
+[v ___aldiv@counter counter `uc  1 a 1 8 ]
+"7
+[v ___aldiv@dividend dividend `l  1 p 4 0 ]
+[v ___aldiv@divisor divisor `l  1 p 4 4 ]
+"41
+} 0
+"9 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\AECUL/ExtEEPROM/ExtEEPROM.c
+[v _EXTEEPROM_WriteByte EXTEEPROM_WriteByte `(v  1 e 1 0 ]
+{
+[v EXTEEPROM_WriteByte@Eadd Eadd `uc  1 a 1 wreg ]
+[v EXTEEPROM_WriteByte@Eadd Eadd `uc  1 a 1 wreg ]
+[v EXTEEPROM_WriteByte@Byteadd Byteadd `uc  1 p 1 12 ]
+[v EXTEEPROM_WriteByte@data data `uc  1 p 1 13 ]
+[v EXTEEPROM_WriteByte@Eadd Eadd `uc  1 a 1 14 ]
+"11
+} 0
+"91 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\mcc_generated_files/examples/i2c_master_example.c
+[v _I2C_Write1ByteRegister I2C_Write1ByteRegister `(v  1 e 1 0 ]
+{
+[v I2C_Write1ByteRegister@address address `uc  1 a 1 wreg ]
+[v I2C_Write1ByteRegister@address address `uc  1 a 1 wreg ]
+[v I2C_Write1ByteRegister@reg reg `uc  1 p 1 9 ]
+[v I2C_Write1ByteRegister@data data `uc  1 p 1 10 ]
+[v I2C_Write1ByteRegister@address address `uc  1 a 1 11 ]
+"99
+} 0
+"13 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\AECUL/ExtEEPROM/ExtEEPROM.c
+[v _EXTEEPROM_ReadByte EXTEEPROM_ReadByte `(uc  1 e 1 0 ]
+{
+[v EXTEEPROM_ReadByte@Eadd Eadd `uc  1 a 1 wreg ]
+"14
+[v EXTEEPROM_ReadByte@read read `uc  1 a 1 14 ]
+"13
+[v EXTEEPROM_ReadByte@Eadd Eadd `uc  1 a 1 wreg ]
+[v EXTEEPROM_ReadByte@Byteadd Byteadd `uc  1 p 1 12 ]
+"15
+[v EXTEEPROM_ReadByte@Eadd Eadd `uc  1 a 1 13 ]
+"17
+} 0
+"63 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\mcc_generated_files/examples/i2c_master_example.c
+[v _I2C_Read1ByteRegister I2C_Read1ByteRegister `(uc  1 e 1 0 ]
+{
+[v I2C_Read1ByteRegister@address address `uc  1 a 1 wreg ]
+"65
+[v I2C_Read1ByteRegister@returnValue returnValue `uc  1 a 1 11 ]
+"63
+[v I2C_Read1ByteRegister@address address `uc  1 a 1 wreg ]
+[v I2C_Read1ByteRegister@reg reg `uc  1 p 1 9 ]
+"65
+[v I2C_Read1ByteRegister@address address `uc  1 a 1 10 ]
+"75
+} 0
+"274 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\mcc_generated_files/i2c_master.c
+[v _I2C_SetDataCompleteCallback I2C_SetDataCompleteCallback `(v  1 e 1 0 ]
+{
+[v I2C_SetDataCompleteCallback@cb cb `*.37(E363  1 p 2 5 ]
+[v I2C_SetDataCompleteCallback@ptr ptr `*.39v  1 p 2 7 ]
+"277
+} 0
+"264
+[v _I2C_SetBuffer I2C_SetBuffer `(v  1 e 1 0 ]
+{
+[v I2C_SetBuffer@buffer buffer `*.39v  1 p 2 0 ]
+[v I2C_SetBuffer@bufferSize bufferSize `ui  1 p 2 2 ]
+"272
+} 0
+"284
+[v _I2C_SetAddressNackCallback I2C_SetAddressNackCallback `(v  1 e 1 0 ]
+{
+[v I2C_SetAddressNackCallback@cb cb `*.37(E363  1 p 2 5 ]
+[v I2C_SetAddressNackCallback@ptr ptr `*.39v  1 p 2 7 ]
+"287
+} 0
+"304
+[v _I2C_SetCallback I2C_SetCallback `(v  1 s 1 I2C_SetCallback ]
+{
+[v I2C_SetCallback@idx idx `E3152  1 a 1 wreg ]
+[v I2C_SetCallback@idx idx `E3152  1 a 1 wreg ]
+[v I2C_SetCallback@cb cb `*.37(E363  1 p 2 0 ]
+[v I2C_SetCallback@ptr ptr `*.39v  1 p 2 2 ]
+"306
+[v I2C_SetCallback@idx idx `E3152  1 a 1 4 ]
+"316
+} 0
+"176
+[v _I2C_Open I2C_Open `(E358  1 e 1 0 ]
+{
+[v I2C_Open@address address `uc  1 a 1 wreg ]
+"178
+[v I2C_Open@returnValue returnValue `E358  1 a 1 3 ]
+"176
+[v I2C_Open@address address `uc  1 a 1 wreg ]
+"178
+[v I2C_Open@address address `uc  1 a 1 2 ]
+"209
+} 0
+"299
+[v _I2C_SetInterruptHandler I2C_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v I2C_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
+"302
+} 0
+"544
+[v _I2C_MasterOpen I2C_MasterOpen `T(a  1 s 1 I2C_MasterOpen ]
+{
+"556
+} 0
+"627
+[v _I2C_MasterEnableIrq I2C_MasterEnableIrq `T(v  1 s 1 I2C_MasterEnableIrq ]
+{
+"630
+} 0
+"252
+[v _I2C_MasterWrite I2C_MasterWrite `(E358  1 e 1 0 ]
+{
+"255
+} 0
+"226
+[v _I2C_MasterOperation I2C_MasterOperation `(E358  1 e 1 0 ]
+{
+[v I2C_MasterOperation@read read `a  1 a 1 wreg ]
+"228
+[v I2C_MasterOperation@returnValue returnValue `E358  1 a 1 1 ]
+"226
+[v I2C_MasterOperation@read read `a  1 a 1 wreg ]
+"228
+[v I2C_MasterOperation@read read `a  1 a 1 0 ]
+"245
+} 0
+"589
+[v _I2C_MasterStart I2C_MasterStart `T(v  1 s 1 I2C_MasterStart ]
+{
+"592
+} 0
+"211
+[v _I2C_Close I2C_Close `(E358  1 e 1 0 ]
+{
+"213
+[v I2C_Close@returnValue returnValue `E358  1 a 1 0 ]
+"224
+} 0
+"637
+[v _I2C_MasterDisableIrq I2C_MasterDisableIrq `T(v  1 s 1 I2C_MasterDisableIrq ]
+{
+"640
+} 0
+"558
+[v _I2C_MasterClose I2C_MasterClose `T(v  1 s 1 I2C_MasterClose ]
+{
+"562
+} 0
+"642
+[v _I2C_MasterClearIrq I2C_MasterClearIrq `T(v  1 s 1 I2C_MasterClearIrq ]
+{
+"645
+} 0
+"115 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\mcc_generated_files/adc.c
+[v _ADC_GetConversion ADC_GetConversion `(us  1 e 2 0 ]
+{
+[v ADC_GetConversion@channel channel `E2740  1 a 1 wreg ]
+[v ADC_GetConversion@channel channel `E2740  1 a 1 wreg ]
+"118
+[v ADC_GetConversion@channel channel `E2740  1 a 1 4 ]
+"133
+} 0
+"108 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManagerLow INTERRUPT_InterruptManagerLow `IIL(v  1 e 1 0 ]
+{
+"119
+} 0
+"140 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\mcc_generated_files/adc.c
+[v _ADC_ISR ADC_ISR `(v  1 e 1 0 ]
+{
+"149
+} 0
+"155
+[v _ADC_DefaultInterruptHandler ADC_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"158
+} 0
+"113 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\main.c
+[v _lightSwitch lightSwitch `(v  1 e 1 0 ]
+{
+"131
+} 0
+"79 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManagerHigh INTERRUPT_InterruptManagerHigh `IIH(v  1 e 1 0 ]
+{
+"106
+} 0
+"86 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\mcc_generated_files/ext_int.c
+[v _INT2_ISR INT2_ISR `(v  1 e 1 0 ]
+{
+"92
+} 0
+"95
+[v _INT2_CallBack INT2_CallBack `(v  1 e 1 0 ]
+{
+"102
+} 0
+"108
+[v _INT2_DefaultInterruptHandler INT2_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"111
+} 0
+"187 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\main.c
+[v _manual_Doorlight manual_Doorlight `(v  1 e 1 0 ]
+{
+"192
+} 0
+"60 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\mcc_generated_files/ext_int.c
+[v _INT1_ISR INT1_ISR `(v  1 e 1 0 ]
+{
+"66
+} 0
+"69
+[v _INT1_CallBack INT1_CallBack `(v  1 e 1 0 ]
+{
+"76
+} 0
+"82
+[v _INT1_DefaultInterruptHandler INT1_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"85
+} 0
+"173 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\main.c
+[v _manual_homelight manual_homelight `(v  1 e 1 0 ]
+{
+"178
+} 0
+"34 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\mcc_generated_files/ext_int.c
+[v _INT0_ISR INT0_ISR `(v  1 e 1 0 ]
+{
+"40
+} 0
+"43
+[v _INT0_CallBack INT0_CallBack `(v  1 e 1 0 ]
+{
+"50
+} 0
+"56
+[v _INT0_DefaultInterruptHandler INT0_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"59
+} 0
+"140 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\main.c
+[v _manual_Override manual_Override `(v  1 e 1 0 ]
+{
+"164
+} 0
+"318 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\mcc_generated_files/i2c_master.c
+[v _I2C_MasterIsr I2C_MasterIsr `(v  1 s 1 I2C_MasterIsr ]
+{
+"321
+} 0
+"323
+[v _I2C_MasterFsm I2C_MasterFsm `T(v  1 s 1 I2C_MasterFsm ]
+{
+"332
+} 0
+"642
+[v i2_I2C_MasterClearIrq I2C_MasterClearIrq `T(v  1 s 1 i2_I2C_MasterClearIrq ]
+{
+"645
+} 0
+"501
+[v _I2C_DO_ADDRESS_NACK I2C_DO_ADDRESS_NACK `(E3134  1 s 1 I2C_DO_ADDRESS_NACK ]
+{
+"513
+} 0
+"495
+[v _I2C_DO_RESET I2C_DO_RESET `(E3134  1 s 1 I2C_DO_RESET ]
+{
+"500
+} 0
+"489
+[v _I2C_DO_RX_NACK_RESTART I2C_DO_RX_NACK_RESTART `(E3134  1 s 1 I2C_DO_RX_NACK_RESTART ]
+{
+"493
+} 0
+"483
+[v _I2C_DO_RX_NACK_STOP I2C_DO_RX_NACK_STOP `(E3134  1 s 1 I2C_DO_RX_NACK_STOP ]
+{
+"487
+} 0
+"476
+[v _I2C_DO_RX_ACK I2C_DO_RX_ACK `(E3134  1 s 1 I2C_DO_RX_ACK ]
+{
+"480
+} 0
+"470
+[v _I2C_DO_SEND_STOP I2C_DO_SEND_STOP `(E3134  1 s 1 I2C_DO_SEND_STOP ]
+{
+"474
+} 0
+"464
+[v _I2C_DO_SEND_RESTART I2C_DO_SEND_RESTART `(E3134  1 s 1 I2C_DO_SEND_RESTART ]
+{
+"468
+} 0
+"457
+[v _I2C_DO_SEND_RESTART_WRITE I2C_DO_SEND_RESTART_WRITE `(E3134  1 s 1 I2C_DO_SEND_RESTART_WRITE ]
+{
+"461
+} 0
+"451
+[v _I2C_DO_SEND_RESTART_READ I2C_DO_SEND_RESTART_READ `(E3134  1 s 1 I2C_DO_SEND_RESTART_READ ]
+{
+"455
+} 0
+"404
+[v _I2C_DO_RCEN I2C_DO_RCEN `(E3134  1 s 1 I2C_DO_RCEN ]
+{
+"409
+} 0
+"380
+[v _I2C_DO_RX I2C_DO_RX `(E3134  1 s 1 I2C_DO_RX ]
+{
+"402
+} 0
+"356
+[v _I2C_DO_TX I2C_DO_TX `(E3134  1 s 1 I2C_DO_TX ]
+{
+"378
+} 0
+"349
+[v _I2C_DO_SEND_ADR_WRITE I2C_DO_SEND_ADR_WRITE `(E3134  1 s 1 I2C_DO_SEND_ADR_WRITE ]
+{
+"354
+} 0
+"342
+[v _I2C_DO_SEND_ADR_READ I2C_DO_SEND_ADR_READ `(E3134  1 s 1 I2C_DO_SEND_ADR_READ ]
+{
+"347
+} 0
+"335
+[v _I2C_DO_IDLE I2C_DO_IDLE `(E3134  1 s 1 I2C_DO_IDLE ]
+{
+"340
+} 0
+"411
+[v _I2C_DO_TX_EMPTY I2C_DO_TX_EMPTY `(E3134  1 s 1 I2C_DO_TX_EMPTY ]
+{
+"426
+} 0
+"647
+[v _I2C_MasterSetIrq I2C_MasterSetIrq `T(v  1 s 1 I2C_MasterSetIrq ]
+{
+"650
+} 0
+"599
+[v _I2C_MasterIsNack I2C_MasterIsNack `T(a  1 s 1 I2C_MasterIsNack ]
+{
+"602
+} 0
+"569
+[v _I2C_MasterSendTxData I2C_MasterSendTxData `T(v  1 s 1 I2C_MasterSendTxData ]
+{
+[v I2C_MasterSendTxData@data data `uc  1 a 1 wreg ]
+[v I2C_MasterSendTxData@data data `uc  1 a 1 wreg ]
+"571
+[v I2C_MasterSendTxData@data data `uc  1 a 1 0 ]
+"572
+} 0
+"604
+[v _I2C_MasterSendAck I2C_MasterSendAck `T(v  1 s 1 I2C_MasterSendAck ]
+{
+"608
+} 0
+"564
+[v _I2C_MasterGetRxData I2C_MasterGetRxData `T(uc  1 s 1 I2C_MasterGetRxData ]
+{
+"567
+} 0
+"610
+[v _I2C_MasterSendNack I2C_MasterSendNack `T(v  1 s 1 I2C_MasterSendNack ]
+{
+"614
+} 0
+"584
+[v _I2C_MasterStartRx I2C_MasterStartRx `T(v  1 s 1 I2C_MasterStartRx ]
+{
+"587
+} 0
+"526
+[v _I2C_CallbackReturnReset I2C_CallbackReturnReset `(E363  1 e 1 0 ]
+{
+[v I2C_CallbackReturnReset@funPtr funPtr `*.39v  1 p 2 9 ]
+"529
+} 0
+"521
+[v _I2C_CallbackReturnStop I2C_CallbackReturnStop `(E363  1 e 1 0 ]
+{
+"524
+} 0
+"170 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\mcc_generated_files/examples/i2c_master_example.c
+[v _rdBlkRegCompleteHandler rdBlkRegCompleteHandler `(E363  1 s 1 rdBlkRegCompleteHandler ]
+{
+[v rdBlkRegCompleteHandler@ptr ptr `*.39v  1 p 2 9 ]
+"175
+} 0
+"156
+[v _wr1RegCompleteHandler wr1RegCompleteHandler `(E363  1 s 1 wr1RegCompleteHandler ]
+{
+[v wr1RegCompleteHandler@ptr ptr `*.39v  1 p 2 9 ]
+"161
+} 0
+"149
+[v _rd2RegCompleteHandler rd2RegCompleteHandler `(E363  1 s 1 rd2RegCompleteHandler ]
+{
+[v rd2RegCompleteHandler@ptr ptr `*.39v  1 p 2 9 ]
+"154
+} 0
+"142
+[v _rd1RegCompleteHandler rd1RegCompleteHandler `(E363  1 s 1 rd1RegCompleteHandler ]
+{
+[v rd1RegCompleteHandler@ptr ptr `*.39v  1 p 2 9 ]
+"147
+} 0
+"163
+[v _wr2RegCompleteHandler wr2RegCompleteHandler `(E363  1 s 1 wr2RegCompleteHandler ]
+{
+[v wr2RegCompleteHandler@ptr ptr `*.39v  1 p 2 9 ]
+"168
+} 0
+"274 C:\Users\DELL\MPLABXProjects\smarthome\SmartHome.X\mcc_generated_files/i2c_master.c
+[v i2_I2C_SetDataCompleteCallback I2C_SetDataCompleteCallback `(v  1 e 1 0 ]
+{
+[v i2I2C_SetDataCompleteCallback@cb cb `*.37(E363  1 p 2 5 ]
+[v i2I2C_SetDataCompleteCallback@ptr ptr `*.39v  1 p 2 7 ]
+"277
+} 0
+"304
+[v i2_I2C_SetCallback I2C_SetCallback `(v  1 s 1 i2_I2C_SetCallback ]
+{
+[v i2I2C_SetCallback@idx idx `E3152  1 a 1 wreg ]
+[v i2I2C_SetCallback@idx idx `E3152  1 a 1 wreg ]
+[v i2I2C_SetCallback@cb cb `*.37(E363  1 p 2 0 ]
+[v i2I2C_SetCallback@ptr ptr `*.39v  1 p 2 2 ]
+"306
+[v i2I2C_SetCallback@idx idx `E3152  1 a 1 4 ]
+"316
+} 0
+"264
+[v i2_I2C_SetBuffer I2C_SetBuffer `(v  1 e 1 0 ]
+{
+[v i2I2C_SetBuffer@buffer buffer `*.39v  1 p 2 0 ]
+[v i2I2C_SetBuffer@bufferSize bufferSize `ui  1 p 2 2 ]
+"272
+} 0
+"594
+[v _I2C_MasterStop I2C_MasterStop `T(v  1 s 1 I2C_MasterStop ]
+{
+"597
+} 0
+"574
+[v _I2C_MasterEnableRestart I2C_MasterEnableRestart `T(v  1 s 1 I2C_MasterEnableRestart ]
+{
+"577
+} 0
