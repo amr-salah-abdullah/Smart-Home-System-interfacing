@@ -11,7 +11,8 @@ The system is divided into 4 main sections:
   * Automatic lighting control system.
 with the added addition of an LCD unit to display the current date, time and temperature data read by the MCUs.
 
-![Smart Home model display](/Full Smart Home Network.png)
+![Full Smart Home Network](https://github.com/amr-salah-abdullah/Smart-Home-System-interfacing/assets/156439432/19933318-9b5f-41d9-96f0-8260f4fab16f)
+
 
 ## I2C Bus Network
 
